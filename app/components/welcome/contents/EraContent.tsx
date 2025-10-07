@@ -27,42 +27,41 @@ const EraContent = () => {
         </div>
       </h2>
       <p>
-        Welcome to the Electron React App (v{appVersion})! A prebuilt starter kit that provides a solid foundation for
-        developing desktop applications.
+        Добро пожаловать в приложение Electron React (v{appVersion})! Готовый стартовый комплект, обеспечивающий прочную основу для
+        разработки настольных приложений.
       </p>
       <p>
-        This project is built with Electron, React, Vite, TypeScript, and Tailwind CSS to provide a modern development
-        environment with the latest features.
+        Этот проект создан с использованием Electron, React, Vite, TypeScript и Tailwind CSS, чтобы предоставить современную среду разработки с новейшими функциями.
       </p>
 
       <div className="welcome-content-steps">
         <ContentStep
           title="Custom Window Titlebar & Menus"
-          description="Customize the look and feel of the application window"
+          description="Настройте внешний вид окна приложения"
           icon={CodeWindowIcon}
         />
 
         <ContentStep
           title="Lightning Fast HMR"
-          description="Hot Module Replacement that stays fast regardless of app size"
+          description="Горячая замена модулей, которая выполняется быстро независимо от размера приложения"
           icon={FanIcon}
         />
 
         <ContentStep
           title="Dark & Light Mode"
-          description="Switch between dark and light mode with a click of a button"
+          description="Переключайтесь между темным и светлым режимами одним нажатием кнопки"
           icon={ColorSchemeIcon}
         />
 
         <ContentStep
           title="IPC Communication Handlers"
-          description="API handlers for communication between main and renderer processes"
+          description="Обработчики API для связи между основными процессами и процессами рендеринга"
           icon={AsterikIcon}
         />
       </div>
 
       <p className="learn-more">
-        Learn more about Electron React App at{' '}
+        Узнайте больше о приложении Electron React на сайте{' '}
         <a href="https://github.com/guasam/electron-react-app" target="_blank" rel="noreferrer">
           github.com
         </a>

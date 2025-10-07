@@ -11,39 +11,39 @@ const ShadContent = () => {
           <img src="res://icons/shadcn.png" className="w-4 h-4" />
         </div>
       </h2>
-      <p>A collection of re-usable components built with Radix UI and Tailwind CSS.</p>
+      <p>Коллекция повторно используемых компонентов, созданных с помощью Radix UI и Tailwind CSS.</p>
       <p>
-        Shadcn UI provides a set of accessible, customizable, and beautiful components that you can copy and paste into
-        your apps. It's not a component library, but a collection of re-usable components that you can copy and
-        customize.
+        Shadcn UI предоставляет набор доступных, настраиваемых и красивых компонентов, которые вы можете копировать и вставлять
+        в свои приложения. Это не библиотека компонентов, а набор повторно используемых компонентов, которые вы можете копировать и
+        настраивать.
       </p>
       <div className="welcome-content-steps">
         <ContentStep
           title="Accessible Components"
-          description="Built with Radix UI primitives for maximum accessibility"
+          description="Создан с использованием примитивов пользовательского интерфейса Radix для максимальной доступности"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Customizable"
-          description="Copy and paste components into your project and customize them"
+          description="Скопируйте и вставьте компоненты в свой проект и настройте их."
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Tailwind CSS"
-          description="Styled with Tailwind CSS for consistent and modern design"
+          description="Разработано с использованием Tailwind CSS для обеспечения последовательного и современного дизайна."
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="TypeScript"
-          description="Written in TypeScript for better developer experience"
+          description="Написано на TypeScript для удобства разработчиков"
           icon={AsterikIcon}
         />
       </div>
       <p className="learn-more">
-        Learn more about Shadcn UI at{' '}
+        Узнайте больше о Shadcn UI на сайте{' '}
         <a href="https://ui.shadcn.com/" target="_blank" rel="noreferrer">
           ui.shadcn.com
         </a>

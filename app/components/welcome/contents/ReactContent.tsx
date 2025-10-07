@@ -11,40 +11,39 @@ const ReactContent = () => {
           <img src="res://icons/react.png" className="w-4 h-4" />
         </div>
       </h2>
-      <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+      <p>React — декларативная, эффективная и гибкая библиотека JavaScript для создания пользовательских интерфейсов.</p>
       <p>
-        It lets you build user interfaces out of individual pieces called components, creating reusable and maintainable
-        code for your applications.
+        Он позволяет создавать пользовательские интерфейсы из отдельных частей, называемых компонентами, создавая повторно используемый и поддерживаемый код для ваших приложений.
       </p>
 
       <div className="welcome-content-steps">
         <ContentStep
           title="Component-Based"
-          description="Build encapsulated components that manage their state for complex UIs"
+          description="Создавайте инкапсулированные компоненты, управляющие своим состоянием для сложных пользовательских интерфейсов."
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Declarative"
-          description="Create interactive UIs with simple views for each application state"
+          description="Создавайте интерактивные пользовательские интерфейсы с простыми представлениями для каждого состояния приложения."
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Learn Once, Write Anywhere"
-          description="Develop new features without rewriting existing code"
+          description="Разрабатывайте новые функции без переписывания существующего кода"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Virtual DOM"
-          description="Lightweight DOM representation for optimal rendering performance"
+          description="Облегченное представление DOM для оптимальной производительности рендеринга"
           icon={AsterikIcon}
         />
       </div>
 
       <p className="learn-more">
-        Learn more about React at{' '}
+        Узнайте больше о React на сайте{' '}
         <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
           reactjs.org
         </a>

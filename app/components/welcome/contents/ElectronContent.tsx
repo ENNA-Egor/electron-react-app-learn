@@ -11,40 +11,40 @@ const ElectronContent = () => {
           <img src="res://icons/electron.png" className="w-4 h-4" />
         </div>
       </h2>
-      <p>With the power of modern Chromium, Electron gives you an unopinionated blank slate to build your app.</p>
+      <p>Благодаря возможностям современного Chromium, Electron дает вам чистый лист без каких-либо предубеждений для создания вашего приложения.</p>
       <p>
-        Choose to integrate your favourite libraries and frameworks from the front-end ecosystem, or carve your own path
-        with bespoke HTML code.
+       Вы можете интегрировать свои любимые библиотеки и фреймворки из экосистемы фронтенда или проложить свой собственный путь
+        с помощью уникального HTML-кода.
       </p>
 
       <div className="welcome-content-steps">
         <ContentStep
           title="Web Technologies"
-          description="Electron embeds Chromium and Node.js to enable devs to build desktop apps"
+          description="Electron встраивает Chromium и Node.js, чтобы позволить разработчикам создавать десктопные приложения"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Cross-Platform"
-          description="Build cross-platform desktop applications with ease using Electron"
+          description="С легкостью создавайте кроссплатформенные настольные приложения с помощью Electron"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Open Source"
-          description="Electron is an open source project maintained by the community"
+          description="Electron — проект с открытым исходным кодом, поддерживаемый сообществом."
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Native APIs"
-          description="Access native APIs with ease using Electron's built-in modules"
+          description="Легкий доступ к собственным API с помощью встроенных модулей Electron"
           icon={AsterikIcon}
         />
       </div>
 
       <p className="learn-more">
-        Learn more about Electron at{' '}
+        Узнайте больше об Electron на сайте{' '}
         <a href="https://www.electronjs.org/" target="_blank" rel="noreferrer">
           electronjs.org
         </a>

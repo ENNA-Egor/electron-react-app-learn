@@ -11,40 +11,40 @@ const TailwindContent = () => {
           <img src="res://icons/tailwind.png" className="w-4 h-4" />
         </div>
       </h2>
-      <p>A utility-first CSS framework for rapidly building custom user interfaces.</p>
+      <p>CSS-фреймворк, ориентированный в первую очередь на утилиты, для быстрого создания пользовательских интерфейсов.</p>
       <p>
-        Tailwind CSS provides low-level utility classes that let you build completely custom designs without ever
-        leaving your HTML, resulting in faster development and cleaner code.
+        Tailwind CSS предоставляет низкоуровневые служебные классы, которые позволяют вам создавать полностью индивидуальный
+         дизайн, не выходя из HTML, что приводит к более быстрой разработке и более чистому коду.
       </p>
 
       <div className="welcome-content-steps">
         <ContentStep
           title="Utility First"
-          description="Apply pre-defined utility classes directly in your markup"
+          description="Применяйте предопределенные служебные классы непосредственно в вашей разметке"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Component Driven"
-          description="Extract reusable components for a consistent design system"
+          description="Извлечение повторно используемых компонентов для создания единообразной системы проектирования"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Customizable"
-          description="Extend Tailwind CSS with custom utilities and themes"
+          description="Расширьте Tailwind CSS с помощью пользовательских утилит и тем"
           icon={AsterikIcon}
         />
 
         <ContentStep
           title="Performance"
-          description="Optimize your CSS for better performance with Tailwind's built-in tools"
+          description="Оптимизируйте свой CSS для повышения производительности с помощью встроенных инструментов Tailwind."
           icon={AsterikIcon}
         />
       </div>
 
       <p className="learn-more">
-        Learn more about Tailwind CSS at{' '}
+        Узнайте больше о Tailwind CSS на сайте{' '}
         <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
           tailwindcss.com
         </a>
