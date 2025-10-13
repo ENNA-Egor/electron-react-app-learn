@@ -6,6 +6,7 @@ import ReactContent from './contents/ReactContent'
 import ViteContent from './contents/ViteContent'
 import ShadContent from './contents/ShadContent'
 import TailwindContent from './contents/TailwindContent'
+import NewContent from './contents/NewComponent'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Badge } from '../ui/badge'
 import './styles.css'
@@ -42,6 +43,7 @@ export default function WelcomeKit() {
 
   return (
     <div className="welcome-content flex flex-col gap-5">
+      <NewContent/>
       <div className="flex gap-5 items-center">
         <AnimatePresence mode="wait">
           <motion.div
