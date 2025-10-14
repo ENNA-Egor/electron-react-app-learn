@@ -23,13 +23,13 @@ body,
 
 h1 {
   color: brown;
-  font-size: 3rem;
+  font-size: 20px;
 }
 
 .btn {
   border-radius: 8px;
   color: chocolate;
-  font-size: 28px;
+  font-size: 20px;
   background-color: rgb(41, 38, 233);
   padding: 3px;
 }
