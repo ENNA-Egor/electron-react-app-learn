@@ -7,10 +7,16 @@ class NewContent extends Component {
       count: 0
   };
 
-  HandelClick =() => {
+  HandelClickPlus =() => {
     // @ts-ignore 
     this.setState((prevState)=>({count: prevState.count +1}), 
-  () =>console.log ('State is completed')
+  () =>console.log ('State is completed plus')
+  );
+  } 
+  HandelClickMinus =() => {
+    // @ts-ignore 
+    this.setState((prevState)=>({count: prevState.count -1}), 
+  () =>console.log ('State is completed minus')
   );
   } 
   render() {
@@ -19,7 +25,9 @@ class NewContent extends Component {
     return (
       <div>
         <h1> New element in ElectronReactApp</h1>
-        <button className="btn" onClick={this.HandelClick}>{this.state.count}</button>
+        <button className="btn" onClick={this.HandelClickPlus}>+</button>
+        <h1>{`Значение коунтера: ${this.state.count}`}</h1>
+        <button className="btn" onClick={this.HandelClickMinus}>-</button>
       </div>
     )
 
