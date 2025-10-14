@@ -1,5 +1,9 @@
 // import { count } from "console";
 import React, {Component} from "react"
+import {userData} from './Data'
+ 
+
+
 
 
 class NewContent extends Component {
@@ -37,6 +41,11 @@ class NewContent extends Component {
         <button className="btn" onClick={this.decrement}>Dec</button>
         <button className="btn" onClick={this.reset}>Res</button>
         <h1>{`Значение коунтера: ${this.state.count}`}</h1>
+        <ul>
+      {userData.map(item => (
+        <li key={item.id}>{item.name}: --{item.value}--{item.name}</li>
+      ))}
+    </ul>
       </div>
     )
 
