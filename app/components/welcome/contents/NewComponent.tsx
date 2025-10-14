@@ -8,7 +8,10 @@ class NewContent extends Component {
   };
 
   HandelClick =() => {
-    this.setState({count: this.state.count +1})
+    // @ts-ignore 
+    this.setState((prevState)=>({count: prevState.count +1}), 
+  () =>console.log ('State is completed')
+  );
   } 
   render() {
 
