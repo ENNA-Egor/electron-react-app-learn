@@ -19,15 +19,24 @@ class NewContent extends Component {
   () =>console.log ('State is completed minus')
   );
   } 
+  reset =() => {
+    // @ts-ignore 
+    this.setState((prevState)=>({count: 0}), 
+  () =>console.log ('State is completed reset')
+  );
+  } 
+
+
   render() {
 
 
     return (
-      <div className="NewComp" style={{margin: 'auto',width: '300px'}}>
+      <div className="NewComp" style={{margin: 'auto',width: '400px'}}>
         <h1> New element in ElectronReactApp</h1>
-        <button className="btn" onClick={this.increment}>+</button>
+        <button className="btn" onClick={this.increment}>Inc</button>
+        <button className="btn" onClick={this.decrement}>Dec</button>
+        <button className="btn" onClick={this.reset}>Res</button>
         <h1>{`Значение коунтера: ${this.state.count}`}</h1>
-        <button className="btn" onClick={this.decrement}>-</button>
       </div>
     )
 
