@@ -1,7 +1,7 @@
 // import { count } from "console";
 import React, {Component} from "react"
 import {userData} from './Data'
- 
+import {MyComponent} from './Buttons'
 
 
 
@@ -46,6 +46,8 @@ class NewContent extends Component {
         <li key={item.id}>{item.name}: --{item.value}--{item.name}</li>
       ))}
     </ul>
+    <br/>
+    <MyComponent/>
       </div>
     )
 
