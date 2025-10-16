@@ -1,18 +1,29 @@
+import React, {useState, useEffect} from 'react'
 import { useConveyor } from '@/app/hooks/use-conveyor'
 
-export function MyComponent() {
-  const { version } = useConveyor('app')
-  const { windowMinimize } = useConveyor('window')
+export function SettingsComponent() {
+  const conveyor = useConveyor()
+  const [appInfo, setAppInfo] = useState(null)
 
-  const handleGetVersion = async () => {
-    console.log('App version:', await version())
-    console.log('App version:', await window.conveyor.app.version()) // OR
+  useEffect(() => {
+    // Get app information
+    conveyor.app.getAppInfo().then(setAppInfo)
+  }, [])
+
+  const saveTheme = (theme: string) => {
+    conveyor.app.saveUserPreference('theme', theme)
   }
 
   return (
     <div>
-      <button onClick={handleGetVersion} className='btn'>Get Version</button>
-      <button onClick={windowMinimize} className='btn'>Minimize Window</button>
+      <h2>App Info</h2>
+      {appInfo && (
+        <p>
+          {appInfo.name} v{appInfo.version} on {appInfo.platform}
+        </p>
+      )}
+
+      <button onClick={() => saveTheme('dark')}>Set Dark Theme</button>
     </div>
   )
 }
