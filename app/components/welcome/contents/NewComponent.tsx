@@ -1,7 +1,7 @@
 // import { count } from "console";
 import React, {Component} from "react"
 import {userData} from './Data'
-import {MyComponent} from './Buttons'
+import {SettingsComponent} from './Buttons'
 
 
 
@@ -47,7 +47,7 @@ class NewContent extends Component {
       ))}
     </ul>
     <br/>
-    <MyComponent/>
+    <SettingsComponent/>
       </div>
     )
 
