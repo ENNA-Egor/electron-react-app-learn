@@ -8,8 +8,7 @@ import { registerAppHandlers, registerFileHandlers } from '@/lib/conveyor/handle
 export function createAppWindow(): void {
   // Register custom protocol for resources
   registerResourcesProtocol()
-  registerFileHandlers()
-
+  
   // Create the main window.
   const mainWindow = new BrowserWindow({
     width: 900,
@@ -27,10 +26,11 @@ export function createAppWindow(): void {
       sandbox: false,
     },
   })
-
+  
   // Register IPC events for the main window.
   registerWindowHandlers(mainWindow)
   registerAppHandlers()
+  registerFileHandlers()
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()

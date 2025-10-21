@@ -18,6 +18,7 @@ export const registerAppHandlers = () => {
 
 export const registerFileHandlers = () => {
   handle('file-read', (path: string) => {
+    console.log (path)
     return readFileSync(path, 'utf-8')
   })
 

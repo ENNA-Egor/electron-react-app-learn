@@ -14,6 +14,9 @@ export function SettingsComponent() {
   const saveTheme = (theme: string) => {
     conveyor.app.saveUserPreference('theme', theme)
   }
+  const fileTxtRead = (path: string) => {
+    conveyor.app.readFile(path)
+  }
 
   return (
       
@@ -26,6 +29,7 @@ export function SettingsComponent() {
       )}
 
       <button className='btn' onClick={() => saveTheme('dark')}>Set Dark Theme</button>
+      <button className='btn' onClick={() => fileTxtRead('Test.txt')}>readFile</button>
     </div>
   )
 }
