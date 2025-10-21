@@ -7,6 +7,7 @@ export function SettingsComponent() {
 
   useEffect(() => {
     // Get app information
+   // @ts-ignore
     conveyor.app.getAppInfo().then(setAppInfo)
   }, [])
 
@@ -15,15 +16,16 @@ export function SettingsComponent() {
   }
 
   return (
+      
     <div>
       <h2>App Info</h2>
       {appInfo && (
         <p>
-          {appInfo.name} v{appInfo.version} on {appInfo.platform}
+          {(appInfo as any).name} v{(appInfo as any).version} on {(appInfo as any).platform}
         </p>
       )}
 
-      <button onClick={() => saveTheme('dark')}>Set Dark Theme</button>
+      <button className='btn' onClick={() => saveTheme('dark')}>Set Dark Theme</button>
     </div>
   )
 }
