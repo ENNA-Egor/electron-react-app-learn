@@ -1,6 +1,0 @@
-{
-    id : 1,
-    name : Egor,
-    status : works,
-    compani : Artak
-}
