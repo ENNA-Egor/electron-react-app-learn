@@ -1,1 +1,6 @@
-1 2 3 4 5 6 7 Hello
+{
+    id : 1,
+    name : Egor,
+    status : works,
+    compani : Artak
+}
