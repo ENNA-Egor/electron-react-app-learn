@@ -29,7 +29,7 @@ export function SettingsComponent() {
       )}
 
       <button className='btn' onClick={() => saveTheme('dark')}>Set Dark Theme</button>
-      <button className='btn' onClick={() => fileTxtRead('c:/Users/KADRI-ZSS-2/Docs/electron-react-app/Test.txt')}>readFile</button>
+      <button className='btn' onClick={() => fileTxtRead('c:\\Users\\KADRI-ZSS-2\\Docs\\electron-react-app\\hello.txt')}>readFile</button>
     </div>
   )
 }
