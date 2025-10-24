@@ -2,6 +2,11 @@ import { app } from 'electron'
 import { handle } from '@/lib/main/shared'
 import { readFileSync, writeFileSync, unlinkSync } from 'fs'
 
+const path = require('path');
+
+const filePath = path.join(__dirname, '../../data.txt');
+console.log (filePath)
+
 export const registerAppHandlers = () => {
   handle('get-app-info', () => ({
     name: app.getName(),
