@@ -3,9 +3,8 @@ import { handle } from '@/lib/main/shared'
 import { readFileSync, writeFileSync, unlinkSync } from 'fs'
 
 const path = require('path');
+const appRootPath = app.getAppPath();
 
-const filePath = path.join(__dirname, '../../data.txt');
-console.log (filePath)
 
 export const registerAppHandlers = () => {
   handle('get-app-info', () => ({
@@ -22,18 +21,18 @@ export const registerAppHandlers = () => {
 }
 
 export const registerFileHandlers = () => {
-  handle('file-read', (path: string) => {
-    console.log (path)
-    const data = readFileSync(path, 'utf-8');
+  handle('file-read', (mypath: string) => {
+    // console.log (mypath)
+    const data = readFileSync(path.join(appRootPath, mypath), 'utf-8');
     console.log (data)
-    return readFileSync(path, 'utf-8')
+    return readFileSync(path.join(appRootPath, mypath), 'utf-8')
   })
 
-  handle('file-write', (path: string, content: string) => {
-    writeFileSync(path, content, 'utf-8')
+  handle('file-write', (mypath: string, content: string) => {
+    writeFileSync(mypath, content, 'utf-8')
   })
 
-  handle('file-delete', (path: string) => {
-    unlinkSync(path)
+  handle('file-delete', (mypath: string) => {
+    unlinkSync(mypath)
   })
 }

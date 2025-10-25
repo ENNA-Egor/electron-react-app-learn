@@ -18,6 +18,8 @@ export function SettingsComponent() {
     conveyor.file.readFile(path)
   }
 
+  const dataPath = 'data.txt'
+
   return (
       
     <div>
@@ -29,7 +31,7 @@ export function SettingsComponent() {
       )}
 
       <button className='btn' onClick={() => saveTheme('dark')}>Set Dark Theme</button>
-      <button className='btn' onClick={() => fileTxtRead('c:\\Users\\KADRI-ZSS-2\\Docs\\electron-react-app\\data.txt')}>readFile</button>
+      <button className='btn' onClick={() => fileTxtRead(dataPath)}>readFile</button>
     </div>
   )
 }
