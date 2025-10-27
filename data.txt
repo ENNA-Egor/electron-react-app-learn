@@ -1,20 +1,24 @@
 {
-    id : 1,
-    name : User,
-    status : works,
-    siz : {
-        summer suit: {
-            id: 2,
-            size : '48-50'
-            date: 23.10.2025
-            prise: 1050
-        }
-        winter suit: {
-            id: 3,
-            size : '48-50'
-            date: 23.10.2025
-            prise: 2950
-        }
-    }
-    compani : Artak
+    "id" : "1",
+    "name" : "User",
+    "status" : "works",
+    "siz" : [
+         {
+            "id": "2",
+            "view siz": "summer", 
+            "size" : '48-50',
+            "height": '182-188',
+            "date": '23.10.2025',
+            "prise": '1050'
+        },
+         {
+            "id": '3',
+            "view siz": "winter",
+            "size" : '48-50',
+            "height": '170-176',
+            "date": '23.10.2025',
+            "prise": '2950'
+         }
+      ],
+    "compani" : 'Artak'
 }
