@@ -13,6 +13,8 @@ export const registerAppHandlers = () => {
     platform: process.platform,
   }))
 
+ handle('version', () => app.getVersion())
+
   handle('save-user-preference', ({ key, value }) => {
     // Save to file, database, etc.
     console.log(`Saving ${key}: ${value}`)

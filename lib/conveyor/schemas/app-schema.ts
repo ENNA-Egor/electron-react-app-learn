@@ -21,6 +21,11 @@ export const appIpcSchema = {
     ]),
     return: z.boolean(),
   },
+  
+   'version': {
+    args: z.tuple([]),
+    return: z.string(),
+  },
 } as const
 
 export const fileIpcSchema = {
@@ -37,3 +42,4 @@ export const fileIpcSchema = {
     return: z.void(),
   },
 }
+
