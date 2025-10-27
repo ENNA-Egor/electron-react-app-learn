@@ -20,10 +20,10 @@ export function SettingsComponent() {
   }
 
   const dataPath = 'data.txt'
-  // const a = fileData
-  // const dataJS = JSON.parse(a)
+  const a = "{\r\n    \"rows\" : [ {\r\n        \"id\" : 1,\r\n        \"name\" : \"Первый элемент\"\r\n    }, {\r\n        \"id\" : 2,\r\n        \"name\" : \"Второй элемент\"\r\n    } ]\r\n}"
+  const dataJS = JSON.parse(a)
 
-  // console.log (dataJS)
+  console.log (dataJS.rows[0].name);
 
 
   return (
