@@ -20,6 +20,11 @@ export function SettingsComponent() {
   }
 
   const dataPath = 'data.txt'
+  // const a = fileData
+  // const dataJS = JSON.parse(a)
+
+  // console.log (dataJS)
+
 
   return (
       
