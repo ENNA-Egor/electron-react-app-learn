@@ -8,6 +8,7 @@ export class AppApi extends ConveyorApi {
 
 export class FileApi extends ConveyorApi {
   readFile = (path: string) => this.invoke('file-read', path)
+  pathFile = (path: string) => this.invoke('file-path', path)
   writeFile = (path: string, content: string) => this.invoke('file-write', path, content)
   deleteFile = (path: string) => this.invoke('file-delete', path)
 }

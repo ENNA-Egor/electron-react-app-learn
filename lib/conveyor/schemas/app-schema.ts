@@ -26,10 +26,16 @@ export const appIpcSchema = {
     args: z.tuple([]),
     return: z.string(),
   },
+
+
 } as const
 
 export const fileIpcSchema = {
   'file-read': {
+    args: z.tuple([z.string()]),
+    return: z.string(),
+  },
+  'file-path': {
     args: z.tuple([z.string()]),
     return: z.string(),
   },

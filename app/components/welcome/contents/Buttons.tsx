@@ -14,7 +14,7 @@ export function SettingsComponent() {
     // Get app information
    // @ts-ignore
     conveyor.app.getAppInfo().then(setAppInfo)
-    // conveyor.file.readFile(path).then(setFileData)
+    conveyor.file.pathFile().then(setFileData)
   }, [])
 
   const saveTheme = (theme: string) => {

@@ -29,6 +29,10 @@ export const registerFileHandlers = () => {
     return data
   })
 
+  handle('file-path', () => ({
+    path: appRootPath,
+  }))
+
   handle('file-write', (mypath: string, content: string) => {
     writeFileSync(mypath, content, 'utf-8')
   })
