@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useConveyor } from '@/app/hooks/use-conveyor'
+// import {pathApp} from '../../../../lib/conveyor/handlers/app-handler'
 
 export function SettingsComponent() {
   const conveyor = useConveyor()
@@ -10,6 +11,7 @@ export function SettingsComponent() {
     // Get app information
    // @ts-ignore
     conveyor.app.getAppInfo().then(setAppInfo)
+    // conveyor.file.readFile(path).then(setFileData)
   }, [])
 
   const saveTheme = (theme: string) => {
@@ -17,7 +19,9 @@ export function SettingsComponent() {
   }
   const fileTxtRead = (path: string) => {
     conveyor.file.readFile(path).then(setFileData)
-    console.log (fileData)
+    setTimeout(() => {
+      console.log (fileData)
+    }, 1000);
   }
 
 
