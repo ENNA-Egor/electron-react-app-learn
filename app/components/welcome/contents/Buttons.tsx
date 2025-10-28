@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { useConveyor } from '@/app/hooks/use-conveyor'
-// import {pathApp} from '../../../../lib/conveyor/handlers/app-handler'
+
+// const path = require('path');
+// const pathApp = __dirname
+// console.log (pathApp)
 
 export function SettingsComponent() {
   const conveyor = useConveyor()
