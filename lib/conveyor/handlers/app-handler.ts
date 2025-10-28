@@ -3,7 +3,7 @@ import { handle } from '@/lib/main/shared'
 import { readFileSync, writeFileSync, unlinkSync } from 'fs'
 
 const path = require('path');
-const appRootPath = app.getAppPath();
+const appRootPath: string = app.getAppPath();
 
 export const registerAppHandlers = () => {
   handle('get-app-info', () => ({
@@ -29,9 +29,7 @@ export const registerFileHandlers = () => {
     return data
   })
 
-  handle('file-path', () => ({
-    path: appRootPath,
-  }))
+  handle('file-path', () => app.getAppPath())
 
   handle('file-write', (mypath: string, content: string) => {
     writeFileSync(mypath, content, 'utf-8')

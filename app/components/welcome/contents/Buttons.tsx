@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useConveyor } from '@/app/hooks/use-conveyor'
 
-// const path = require('path');
+const path = require('path');
 // const pathApp = __dirname
 // console.log (pathApp)
 
@@ -9,13 +9,17 @@ export function SettingsComponent() {
   const conveyor = useConveyor()
   const [appInfo, setAppInfo] = useState(null)
   const [fileData, setFileData] = useState('----')
+  const [pathData, setPathData] = useState('')
 
   useEffect(() => {
     // Get app information
    // @ts-ignore
     conveyor.app.getAppInfo().then(setAppInfo)
-    conveyor.file.pathFile().then(setFileData)
+    conveyor.file.pathFile(pathData).then(setPathData)
   }, [])
+
+  const dataPath = 'data.txt'
+  // console.log (path.join(pathData, dataPath))
 
   const saveTheme = (theme: string) => {
     conveyor.app.saveUserPreference('theme', theme)
@@ -30,7 +34,6 @@ export function SettingsComponent() {
 
   
 
-  const dataPath = 'data.txt'
   // const a = "{\r\n    \"rows\" : [ {\r\n        \"id\" : 1,\r\n        \"name\" : \"Первый элемент\"\r\n    }, {\r\n        \"id\" : 2,\r\n        \"name\" : \"Второй элемент\"\r\n    } ]\r\n}"
   // const dataJS = JSON.parse(a)
 
