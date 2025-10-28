@@ -25,7 +25,7 @@ export const registerFileHandlers = () => {
   handle('file-read', (mypath: string) => {
     // console.log (mypath)
     const data = readFileSync(path.join(appRootPath, mypath), 'utf-8');
-    console.log (data)
+    // console.log (data)
     return data
   })
 

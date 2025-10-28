@@ -19,7 +19,8 @@ export function SettingsComponent() {
   }, [])
 
   const dataPath = 'data.txt'
-  // console.log (path.join(pathData, dataPath))
+  // const a = path.join(pathData, dataPath)
+  // console.log (a)
 
   const saveTheme = (theme: string) => {
     conveyor.app.saveUserPreference('theme', theme)
