@@ -24,6 +24,11 @@ export function SettingsComponent() {
       console.log (fileData)
   }
 
+  // const fileTxtWrite = (path: string) => {
+  //   conveyor.file.writeFile(path, fileData).then(setFileData)
+  //     console.log (fileData)
+  // }
+
 
 
 
@@ -45,6 +50,7 @@ export function SettingsComponent() {
 
       <button className='btn' onClick={() => saveTheme('dark')}>Set Dark Theme</button>
       <button className='btn' onClick={() => fileTxtRead(dataPath)}>readFile</button>
+      {/* <button className='btn' onClick={() => fileTxtWrite(dataPath)}>writeFile</button> */}
     </div>
   )
 }
