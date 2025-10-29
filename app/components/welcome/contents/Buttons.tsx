@@ -26,7 +26,7 @@ export function SettingsComponent() {
     const Data =  JSON.parse(fileData)
     console.log ('2',Data)
       // setTimeout(() => {  
-    console.log ('3',Data.siz[1].price)
+    console.log ('3',Data.id)
   // }, 1000);
   }
 
