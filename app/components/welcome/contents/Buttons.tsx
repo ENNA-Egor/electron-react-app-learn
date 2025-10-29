@@ -26,15 +26,17 @@ export function SettingsComponent() {
     const Data =  JSON.parse(fileData)
     console.log ('2',Data)
     console.log ('3',Data.id)
-  //     setTimeout(() => {  
-  //   setFileData (JSON.stringify(fileData))
-  //   console.log ('4S',fileData)
-  // }, 5000);
+    strigifySetFileData(Data)
+  }
+
+  const strigifySetFileData = (Data) => {
+      setFileData (JSON.stringify(Data))
+      console.log ('4',fileData)
   }
 
   const fileTxtWrite = (path: string) => {
-    conveyor.file.writeFile(path, file)
-      console.log (file)
+    conveyor.file.writeFile(path, fileData)
+      console.log ('5',fileData)
   }
 
 
