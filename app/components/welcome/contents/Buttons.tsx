@@ -25,9 +25,9 @@ export function SettingsComponent() {
     console.log ('1',fileData)
     const Data =  JSON.parse(fileData)
     console.log ('2',Data)
-      setTimeout(() => {  
-    console.log ('3',Data.id)
-  }, 1000);
+      // setTimeout(() => {  
+    console.log ('3',Data.siz[1].price)
+  // }, 1000);
   }
 
   const fileTxtWrite = (path: string) => {
