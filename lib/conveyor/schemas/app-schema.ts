@@ -35,10 +35,7 @@ export const fileIpcSchema = {
     args: z.tuple([z.string()]),
     return: z.string(),
   },
-  'file-path': {
-    args: z.tuple([z.string()]),
-    return: z.string(),
-  },
+
   'file-write': {
     args: z.tuple([z.string(), z.string()]),
     return: z.void(),

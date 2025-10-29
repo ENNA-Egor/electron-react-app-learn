@@ -23,13 +23,10 @@ export const registerAppHandlers = () => {
 
 export const registerFileHandlers = () => {
   handle('file-read', (mypath: string) => {
-    // console.log (mypath)
     const data = readFileSync(path.join(appRootPath, mypath), 'utf-8');
-    // console.log (data)
     return data
   })
 
-  handle('file-path', () => app.getAppPath())
 
   handle('file-write', (mypath: string, content: string) => {
     writeFileSync(mypath, content, 'utf-8')
