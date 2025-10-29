@@ -25,9 +25,11 @@ export function SettingsComponent() {
     console.log ('1',fileData)
     const Data =  JSON.parse(fileData)
     console.log ('2',Data)
-      // setTimeout(() => {  
     console.log ('3',Data.id)
-  // }, 1000);
+  //     setTimeout(() => {  
+  //   setFileData (JSON.stringify(fileData))
+  //   console.log ('4S',fileData)
+  // }, 5000);
   }
 
   const fileTxtWrite = (path: string) => {
@@ -35,13 +37,7 @@ export function SettingsComponent() {
       console.log (file)
   }
 
-//  const parseData = () => {
-//   setTimeout(() => {  
-//     const Data =  JSON.parse(fileData)
-//     console.log (fileData)
-//     console.log (Data.id)
-//   }, 1000);
-//  }
+
 
 
   return (
