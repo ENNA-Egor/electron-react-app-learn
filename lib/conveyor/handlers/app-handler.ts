@@ -4,6 +4,7 @@ import { readFileSync, writeFileSync, unlinkSync } from 'fs'
 
 const path = require('path');
 const appRootPath: string = app.getAppPath();
+console.log ('mypath', appRootPath)
 
 export const registerAppHandlers = () => {
   handle('get-app-info', () => ({

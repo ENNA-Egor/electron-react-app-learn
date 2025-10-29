@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { useConveyor } from '@/app/hooks/use-conveyor'
+import {startDataValue} from './StartData'
 
 const dataPath = 'data.txt'
 const file = 'Hello write file'
@@ -7,7 +8,7 @@ const file = 'Hello write file'
 export function SettingsComponent() {
   const conveyor = useConveyor()
   const [appInfo, setAppInfo] = useState(null)
-  const [fileData, setFileData] = useState('----')
+  const [fileData, setFileData] = useState(startDataValue)
 
   useEffect(() => {
     // Get app information
@@ -21,7 +22,11 @@ export function SettingsComponent() {
   }
   const fileTxtRead = (path: string) => {
     conveyor.file.readFile(path).then(setFileData)
-      console.log (fileData)
+      setTimeout(() => {  
+    const Data =  JSON.parse(fileData)
+    console.log (fileData)
+    console.log (Data.id)
+  }, 1000);
   }
 
   const fileTxtWrite = (path: string) => {
@@ -29,7 +34,13 @@ export function SettingsComponent() {
       console.log (file)
   }
 
-
+//  const parseData = () => {
+//   setTimeout(() => {  
+//     const Data =  JSON.parse(fileData)
+//     console.log (fileData)
+//     console.log (Data.id)
+//   }, 1000);
+//  }
 
 
   return (
