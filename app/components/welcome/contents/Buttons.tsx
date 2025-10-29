@@ -22,11 +22,11 @@ export function SettingsComponent() {
   }
   const fileTxtRead = (path: string) => {
     conveyor.file.readFile(path).then(setFileData)
-    console.log (fileData)
-      setTimeout(() => {  
+    console.log ('1',fileData)
     const Data =  JSON.parse(fileData)
-    console.log (Data)
-    console.log (Data.id)
+    console.log ('2',Data)
+      setTimeout(() => {  
+    console.log ('3',Data.id)
   }, 1000);
   }
 
