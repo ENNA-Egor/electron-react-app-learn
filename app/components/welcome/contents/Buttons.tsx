@@ -1,20 +1,21 @@
 import React, {useState, useEffect} from 'react'
 import { useConveyor } from '@/app/hooks/use-conveyor'
-import {startDataValue} from './StartData'
+import {initialValue} from './InitialData'
 
 const dataPath = 'data.txt'
-const file = 'Hello write file'
+// const file = 'Hello write file'
 
 export function SettingsComponent() {
   const conveyor = useConveyor()
   const [appInfo, setAppInfo] = useState(null)
-  const [fileData, setFileData] = useState(startDataValue)
+  const [fileData, setFileData] = useState(initialValue)
 
   useEffect(() => {
     // Get app information
    // @ts-ignore
     conveyor.app.getAppInfo().then(setAppInfo)
     fileTxtRead(dataPath)
+    console.log ('10',fileData)
   }, [])
 
   const saveTheme = (theme: string) => {
