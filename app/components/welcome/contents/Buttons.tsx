@@ -11,7 +11,7 @@ export function SettingsComponent() {
   const [fileData, setFileData] = useState(initialValue)
 
   useEffect(() => {
-    // Get app information
+    // Get information about the application and load data from a file
    // @ts-ignore
     conveyor.app.getAppInfo().then(setAppInfo)
     fileTxtRead(dataPath)
