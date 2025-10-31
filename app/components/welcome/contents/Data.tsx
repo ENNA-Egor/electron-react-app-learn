@@ -1,4 +1,7 @@
+// import { nanoid } from 'nanoid'
 
+// const Id =  nanoid();
+// console.log (Id)
 
 export const userData = [
   { id: 1, name: 'Item 1', value: 'Value 1' },
